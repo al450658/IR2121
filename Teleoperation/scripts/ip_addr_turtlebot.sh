@@ -11,6 +11,17 @@ echo "------------------------------------------------------"
 
 # 2. SSH interactivo con auto-aceptación de huella
 ssh -t -o StrictHostKeyChecking=no ubuntu@$IP "
+    # Cargar ROS 2
+    source /opt/ros/humble/setup.bash
+
+    echo \"------------------------------------------------------\"
+    if [ -z \"\$RMW_IMPLEMENTATION\" ]; then
+        echo \"Middleware (DDS) actual: rmw_fastrtps_cpp (Por defecto)\"
+    else
+        echo \"Middleware (DDS) actual: \$RMW_IMPLEMENTATION\"
+    fi
+    echo \"------------------------------------------------------\"
+
     ip addr
 
     # Mantiene la sesión SSH abierta en la Pi al pulsar Ctrl+C
