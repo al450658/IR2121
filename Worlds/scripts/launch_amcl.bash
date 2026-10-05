@@ -5,5 +5,5 @@ export TURTLEBOT3_MODEL=burger
 
 ros2 launch amcl.launch.py \
   use_sim_time:=True \
-  map:=../TI_n1_edited.yaml
+  map:=../TD_n1.yaml
 
