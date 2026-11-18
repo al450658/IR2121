@@ -29,7 +29,7 @@ export ROS_DOMAIN_ID=$user_domain_id
 echo '>>> Entorno cargado. Iniciando reproducción...'
 
 # Se ejecuta ros bag en primer plano
-ros2 bag play rosbag2_2026_11_17-13_13_55 --clock
+ros2 bag play rosbag2_2026_11_18-16_03_39 --clock
 
 # Mensaje tras la salida/cancelación
 echo '>>> Finalizada la reproducción.'
