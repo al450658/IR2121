@@ -30,7 +30,7 @@ echo '>>> Entorno cargado. Iniciando visualización slam...'
 
 #5. Realizamos la navegación
 ros2 launch turtlebot3_navigation2 navigation2.launch.py \
-  use_sim_time:=True map:=./Mapas/casa_gazebo/map.yaml
+  use_sim_time:=True map:=./Mapas/clase_real/map.yaml
  
 # Mensaje tras la salida/cancelación
 echo '>>> Se ha cerrado la navegación.'
